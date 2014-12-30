@@ -13,11 +13,6 @@ import facebook
 def index():
     return render_template('index.html')
 
-# Return the html for login
-@app.route('/login')
-def login():
-    return render_template('login.html')
-
 # Handle the actual Login Post request
 @app.route('/login', methods=["POST"])
 def loginPost():
